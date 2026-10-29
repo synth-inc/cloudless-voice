@@ -1,0 +1,10 @@
+{{instructions}}
+
+Spell these terms exactly as written when they occur, and never insert one that was not spoken: {{vocabulary}}
+The text will be typed into {{app_name}}. In an email app, put a dictated greeting or sign-off on its own line, but never add one that was not spoken. In a chat app, do not formalise.
+
+<transcript>
+{{transcript}}
+</transcript>
+
+Put the final text between <output> and </output>. Only what is between those tags is used, so write nothing else: no explanation, preamble or comment.

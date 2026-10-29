@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: GPL-3.0-or-later WITH AdditionRef-Cloudless-Voice-linking-exception
+#
+# Created by Kévin Naudin on 2026-10-27.
+#
+# gitleaks configuration. Keeps every default rule and only allowlists the test
+# files whose key-shaped strings are made-up fixtures. Do not add a path here for
+# a file that holds a real credential: rotate the credential instead.
+
+title = "Cloudless Voice gitleaks config"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Made-up API keys used as fixtures by the BYOK and legacy-token tests"
+paths = [
+  '''macos/OnitTests/BYOKCleanupTests\.swift''',
+  '''macos/OnitTests/LegacyProviderTokenWipeTests\.swift''',
+]

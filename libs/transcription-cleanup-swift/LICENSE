@@ -1,0 +1,144 @@
+CLOUDLESS SMART CLEANUP LICENSE
+
+Version 1.0
+
+Copyright (C) 2024-2026 Synthetic Exploration, Inc. All rights reserved.
+
+This license applies to the Cloudless Smart Cleanup library distributed in
+this directory (libs/transcription-cleanup-swift), including the
+TranscriptionCleanup.xcframework binary, its headers, module maps,
+interface files, resources and any model weights or data files packaged
+with it (together, the "Library"). It does not apply to the rest of the
+Cloudless Voice repository, which is licensed under the GNU General Public
+License version 3 or later with an additional permission (see the LICENSE
+and LICENSE-EXCEPTION files at the root of the repository).
+
+"Synth", "we" and "us" mean Synthetic Exploration, Inc.
+"You" means the person or legal entity exercising rights under this
+license.
+
+"Cloudless Voice" means the Cloudless Voice application published by Synth
+at https://github.com/synth-inc/cloudless-voice.
+
+"Fork" means any application derived from the Cloudless Voice source code,
+whether modified or not, including applications distributed under a
+different name.
+
+"Subscription Terms" means the Cloudless terms of service and subscription
+terms published at https://www.cloudless.so, as updated from time to time.
+1. NO OWNERSHIP TRANSFER
+
+The Library is licensed, not sold. Synth and its licensors keep all
+right, title and interest in the Library, including all intellectual
+property rights. All rights not expressly granted in this license are
+reserved.
+
+2. REDISTRIBUTION
+
+Subject to the conditions of this license, Synth grants you a worldwide,
+non-exclusive, royalty-free license to reproduce and distribute the
+Library, in unmodified binary form, solely:
+
+  (a) as part of the source code of Cloudless Voice or of a Fork; and
+  (b) linked into or bundled with a compiled build of Cloudless Voice or
+      of a Fork.
+
+When you redistribute the Library you must:
+
+  (i)   keep this LICENSE file with the Library, and keep all copyright,
+        trademark and other notices in the Library intact;
+  (ii)  not charge a separate fee for the Library itself (you may charge
+        for your application as a whole); and
+  (iii) not represent that the Library is licensed under the GNU General
+        Public License or any other open-source license.
+
+You may not distribute the Library on its own, or as part of any software
+other than Cloudless Voice or a Fork.
+
+3. USE
+
+The Library's functionality ("Smart Cleanup") is a paid Cloudless
+product. It includes a free monthly allowance, metered by the Library;
+beyond that allowance it requires an active, paid Cloudless subscription.
+All use of Smart Cleanup is subject to the Subscription Terms. This applies
+equally to the official Cloudless Voice application and to any Fork: a Fork
+may offer Smart Cleanup to its users, provided each user uses their own
+Cloudless account and complies with the Subscription Terms.
+You may build and run Cloudless Voice or a Fork that contains the Library
+without a paid subscription; once the free allowance is used up, the
+Library will not perform Smart Cleanup until a user with an active
+subscription signs in. Builds that are not signed with an Apple Developer
+team receive no free allowance. Dictation itself does not depend on the
+Library.
+
+You must not circumvent, disable or interfere with the usage metering, the
+subscription check or any other license enforcement in the Library or in
+the code that calls it, or provide Smart Cleanup beyond the free allowance
+to anyone who does not hold an active Cloudless subscription.
+
+4. RESTRICTIONS
+
+Except to the extent applicable law expressly permits it despite this
+limitation, you must not:
+
+  (a) modify, adapt, translate or create derivative works of the Library;
+  (b) decompile, disassemble, reverse engineer or otherwise attempt to
+      derive the source code, model weights, prompts, algorithms or
+      internal structure of the Library;
+  (c) extract any model, weights or data files from the Library for use
+      outside Cloudless Voice or a Fork; or
+  (d) remove, alter or obscure any proprietary notice in the Library.
+
+Linking to the Library through its public interface, as Cloudless Voice
+does, is not a modification of the Library.
+
+5. NO OPEN-SOURCE LICENSE
+
+The Library is not open-source software. The additional permission in the
+root LICENSE-EXCEPTION file of the Cloudless Voice repository allows GPL-covered code
+to be combined with the Library; it does not grant any rights in the
+Library. Nothing in this license grants any right to use the "Cloudless"
+or "Cloudless Voice" names, logos or icons (see TRADEMARKS.md at the root
+of the repository).
+
+6. BUILDING WITHOUT THE LIBRARY
+
+Cloudless Voice can be built with no closed-source code at all, using
+scripts/build-fully-open.sh at the root of the repository. Such a build
+does not include the Library and is not subject to this license.
+
+7. TERMINATION
+
+This license terminates automatically if you breach any of its terms. On
+termination you must stop distributing the Library and delete any copies
+in your possession that you are not otherwise entitled to keep. Sections
+1, 4, 8, 9 and 10 survive termination.
+
+8. DISCLAIMER OF WARRANTY
+
+THE LIBRARY IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. THE OUTPUT
+OF THE LIBRARY MAY CONTAIN ERRORS, AND YOU ARE RESPONSIBLE FOR REVIEWING
+IT BEFORE RELYING ON IT.
+
+9. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL SYNTH
+OR ITS LICENSORS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL,
+CONSEQUENTIAL OR EXEMPLARY DAMAGES, OR FOR ANY LOSS OF PROFITS, DATA OR
+GOODWILL, ARISING OUT OF OR IN CONNECTION WITH THE LIBRARY OR THIS
+LICENSE, HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, EVEN IF ADVISED OF
+THE POSSIBILITY OF SUCH DAMAGES. THE PAID SUBSCRIPTION IS GOVERNED BY THE
+SUBSCRIPTION TERMS, AND ANY LIABILITY RELATING TO IT IS AS SET OUT THERE.
+
+10. GENERAL
+
+This license is governed by the laws of
+the State of Delaware, USA, excluding its
+conflict-of-laws rules. If any provision is held unenforceable, the rest
+of this license remains in effect. Synth may publish new versions of this
+license; a new version applies only to copies of the Library distributed
+with it.
+
+Questions about this license: contact@cloudless.so.

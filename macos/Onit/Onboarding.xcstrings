@@ -1,0 +1,3312 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    " (See how)": {
+      "comment": "Onboarding: Screenshots permission - see how link",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " (See how)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " (Voir comment)"
+          }
+        }
+      }
+    },
+    " and ": {
+      "comment": "Onboarding: Conjunction between Terms and Privacy",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " and "
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " et "
+          }
+        }
+      }
+    },
+    "(Don't quit)": {
+      "comment": "Suffix appended to the menu bar's model download/load progress row title",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(Don't quit)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(Ne quittez pas)"
+          }
+        }
+      }
+    },
+    "(give it ~5 seconds)": {
+      "comment": "Loading text shown while waiting for Google Sign-In dialog",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(give it ~5 seconds)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(patientez ~5 secondes)"
+          }
+        }
+      }
+    },
+    "(this is Google's fault, not ours)": {
+      "comment": "Blame text shown after 5 seconds while waiting for Google Sign-In",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(this is Google's fault, not ours)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(c'est la faute de Google, pas la nôtre)"
+          }
+        }
+      }
+    },
+    ". We're building a mobile version of Cloudless, and an account is what links your desktop and mobile experience together.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ". We're building a mobile version of Cloudless, and an account is what links your desktop and mobile experience together."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ". Nous développons une version mobile de Cloudless, et c'est votre compte qui relie votre expérience sur ordinateur et sur mobile."
+          }
+        }
+      }
+    },
+    ". Without a way to reach our users, improving the product gets a lot harder. If you want Cloudless to keep getting better, an account helps us make that happen.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ". Without a way to reach our users, improving the product gets a lot harder. If you want Cloudless to keep getting better, an account helps us make that happen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ". Sans moyen de joindre nos utilisateurs, améliorer le produit devient bien plus difficile. Si vous voulez que Cloudless continue de s'améliorer, un compte nous y aide."
+          }
+        }
+      }
+    },
+    ". Your Pro subscription (or early-user free Smart Cleanup) is tied to your account, so it follows you when you reinstall, switch Macs, or clear your data.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ". Your Pro subscription (or early-user free Smart Cleanup) is tied to your account, so it follows you when you reinstall, switch Macs, or clear your data."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ". Votre abonnement Pro (ou le Smart Cleanup gratuit des premiers utilisateurs) est lié à votre compte : il vous suit si vous réinstallez l'app, changez de Mac ou effacez vos données."
+          }
+        }
+      }
+    },
+    "Accept": {
+      "comment": "Onboarding: Shortcut legend - accept",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accept"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accepter"
+          }
+        }
+      }
+    },
+    "Accept Invite": {
+      "comment": "Onboarding: Discord accept invite button",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accept Invite"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accepter l'invitation"
+          }
+        }
+      }
+    },
+    "Accessibility": {
+      "comment": "Onboarding: Accessibility permission title",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accessibility"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accessibilité"
+          }
+        }
+      }
+    },
+    "Acme": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acme"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "Acme"
+          }
+        }
+      }
+    },
+    "Added": {
+      "comment": "Onboarding: Input source added button state",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Added"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouté"
+          }
+        }
+      }
+    },
+    "Auto-remove filler words": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auto-remove filler words"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supprimer automatiquement les mots de remplissage"
+          }
+        }
+      }
+    },
+    "Autocomplete": {
+      "comment": "Onboarding: Feature name - Autocomplete",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autocomplete"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autocomplétion"
+          }
+        }
+      }
+    },
+    "By continuing, you agree to our": {
+      "comment": "Onboarding: Terms agreement prefix",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "By continuing, you agree to our"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En continuant, vous acceptez nos"
+          }
+        }
+      }
+    },
+    "Cancel": {
+      "comment": "Onboarding: Shortcut legend - cancel",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annuler"
+          }
+        }
+      }
+    },
+    "CapsLock": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CapsLock"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CapsLock"
+          }
+        }
+      }
+    },
+    "CapsLock (default)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CapsLock (default)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CapsLock (par défaut)"
+          }
+        }
+      }
+    },
+    "Change Shortcut": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Change Shortcut"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modifier le raccourci"
+          }
+        }
+      }
+    },
+    "Check your email": {
+      "comment": "Onboarding: Magic link confirmation title",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Check your email"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vérifiez votre e-mail"
+          }
+        }
+      }
+    },
+    "Choose the features you want to enable.": {
+      "comment": "Onboarding: Feature selection page caption",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose the features you want to enable."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choisissez les fonctionnalités que vous souhaitez activer."
+          }
+        }
+      }
+    },
+    "Click the link we sent to:": {
+      "comment": "Onboarding: Magic link confirmation subtitle",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Click the link we sent to:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cliquez sur le lien que nous avons envoyé à :"
+          }
+        }
+      }
+    },
+    "Click to start": {
+      "comment": "Onboarding: Tether tutorial overlay subtitle",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Click to start"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cliquez pour commencer"
+          }
+        }
+      }
+    },
+    "Close": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fermer"
+          }
+        }
+      }
+    },
+    "Cloudless": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloudless"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloudless"
+          }
+        }
+      }
+    },
+    "Cloudless is up and running": {
+      "comment": "Onboarding: Complete page title",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloudless is up and running"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloudless est opérationnel"
+          }
+        }
+      }
+    },
+    "Cloudless is up and running!": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloudless is up and running!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloudless est opérationnel !"
+          }
+        }
+      }
+    },
+    "Cloudless uses Smart Cleanup to detect accidental filler words and remove them.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloudless uses Smart Cleanup to detect accidental filler words and remove them."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloudless utilise le Nettoyage intelligent pour détecter les mots de remplissage accidentels et les supprimer."
+          }
+        }
+      }
+    },
+    "Cloudless uses Smart Cleanup to detect if you change your mind mid-dictation.\n\nSay things like: \"oh wait\", \"no sorry\", \"actually\", to trigger backtracking.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloudless uses Smart Cleanup to detect if you change your mind mid-dictation.\n\nSay things like: \"oh wait\", \"no sorry\", \"actually\", to trigger backtracking."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloudless utilise le Nettoyage intelligent pour détecter si vous changez d'avis en cours de dictée.\n\nDites par exemple : « oh attends », « non pardon », « en fait », pour déclencher le retour en arrière."
+          }
+        }
+      }
+    },
+    "Cloudless uses Smart Cleanup to format and polish your dictations.\n\nJust say a trigger phrase and Cloudless handles the rest.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloudless uses Smart Cleanup to format and polish your dictations.\n\nJust say a trigger phrase and Cloudless handles the rest."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloudless utilise le Nettoyage intelligent pour formater et peaufiner vos dictées.\n\nDites simplement une phrase déclencheur et Cloudless s'occupe du reste."
+          }
+        }
+      }
+    },
+    "Company": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Company"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entreprise"
+          }
+        }
+      }
+    },
+    "Connecting to model server…": {
+      "comment": "Onboarding: Sub-caption shown while resolving the HuggingFace model index before download starts.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connecting to model server…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connexion au serveur de modèles…"
+          }
+        }
+      }
+    },
+    "Continue a sentence or start a new one. Cloudless adjusts punctuation and capitalization automatically.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue a sentence or start a new one. Cloudless adjusts punctuation and capitalization automatically."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continuez une phrase ou commencez-en une nouvelle. Cloudless ajuste automatiquement la ponctuation et les majuscules."
+          }
+        }
+      }
+    },
+    "Continue a sentence...": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue a sentence..."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continuer une phrase…"
+          }
+        }
+      }
+    },
+    "Continue with Google": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue with Google"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continuer avec Google"
+          }
+        }
+      }
+    },
+    "Continue with email": {
+      "comment": "Onboarding: Magic link email submit button",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue with email"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continuer avec l'e-mail"
+          }
+        }
+      }
+    },
+    "Copied!": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copied!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copié !"
+          }
+        }
+      }
+    },
+    "Copy Invite Link": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy Invite Link"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copier le lien d'invitation"
+          }
+        }
+      }
+    },
+    "Custom Shortcut": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Custom Shortcut"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Raccourci personnalisé"
+          }
+        }
+      }
+    },
+    "Custom shortcut must combine one or more modifier keys (Shift, Cmd, Option, Control) with another key (letter, number, etc).": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Custom shortcut must combine one or more modifier keys (Shift, Cmd, Option, Control) with another key (letter, number, etc)."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un raccourci personnalisé doit combiner une ou plusieurs touches de modification (Maj, Cmd, Option, Contrôle) avec une autre touche (lettre, chiffre, etc.)."
+          }
+        }
+      }
+    },
+    "Default Microphone": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Default Microphone"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microphone par défaut"
+          }
+        }
+      }
+    },
+    "Dictate a list": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dictate a list"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dicter une liste"
+          }
+        }
+      }
+    },
+    "Dictate anywhere in your text, Cloudless will figure it out!": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dictate anywhere in your text, Cloudless will figure it out!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dictez n'importe où dans votre texte, Cloudless s'en charge !"
+          }
+        }
+      }
+    },
+    "Dictate anywhere with your shortcut": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dictate anywhere with your shortcut"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dictez n'importe où avec votre raccourci"
+          }
+        }
+      }
+    },
+    "Didn't get it? Check your spam folder and the spelling": {
+      "comment": "Onboarding: Magic link blurb help text line 1",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Didn't get it? Check your spam folder and the spelling"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vous ne l'avez pas reçu ? Vérifiez votre dossier spam et l'orthographe"
+          }
+        }
+      }
+    },
+    "Do I need an account?": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Do I need an account?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ai-je besoin d'un compte ?"
+          }
+        }
+      }
+    },
+    "Done": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Done"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terminé"
+          }
+        }
+      }
+    },
+    "Double-tap Command": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Double-tap Command"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Double appui sur Commande"
+          }
+        }
+      }
+    },
+    "Double-tap Control": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Double-tap Control"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Double appui sur Contrôle"
+          }
+        }
+      }
+    },
+    "Double-tap to test": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Double-tap to test"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appuyez deux fois pour tester"
+          }
+        }
+      }
+    },
+    "Downloading speech recognition model…": {
+      "comment": "Onboarding: Sub-caption shown during the model files download phase.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Downloading speech recognition model…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Téléchargement du modèle de reconnaissance vocale…"
+          }
+        }
+      }
+    },
+    "Edit backtracking triggers": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit backtracking triggers"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modifier les déclencheurs de retour en arrière"
+          }
+        }
+      }
+    },
+    "Edit filler words": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit filler words"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modifier les mots de remplissage"
+          }
+        }
+      }
+    },
+    "Edit list triggers": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit list triggers"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modifier les déclencheurs de liste"
+          }
+        }
+      }
+    },
+    "Email Address": {
+      "comment": "Onboarding: Email input placeholder for magic link auth",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Email Address"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adresse e-mail"
+          }
+        }
+      }
+    },
+    "Failed to get Apple identity token": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Failed to get Apple identity token"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Échec de l'obtention du jeton d'identité Apple."
+          }
+        }
+      }
+    },
+    "Failed to get Google identity token": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Failed to get Google identity token"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible d'obtenir le jeton d'identité Google"
+          }
+        }
+      }
+    },
+    "Failed to open Google sign in": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Failed to open Google sign in"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible d'ouvrir la connexion Google"
+          }
+        }
+      }
+    },
+    "Finalizing…": {
+      "comment": "Onboarding: Sub-caption shown during the post-download CoreML model load phase.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finalizing…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finalisation…"
+          }
+        }
+      }
+    },
+    "Find your invite link anytime in Settings": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find your invite link anytime in Settings"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retrouvez votre lien d'invitation à tout moment dans les Réglages"
+          }
+        }
+      }
+    },
+    "Fn (Function)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fn (Function)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fn (Fonction)"
+          }
+        }
+      }
+    },
+    "For this month.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For this month."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pour ce mois-ci."
+          }
+        }
+      }
+    },
+    "Full Name": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Full Name"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nom complet"
+          }
+        }
+      }
+    },
+    "Get better transcripts by adding some details\nabout yourself (optional).": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Get better transcripts by adding some details\nabout yourself (optional)."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obtenez de meilleures transcriptions en ajoutant quelques\ndétails sur vous-même (facultatif)."
+          }
+        }
+      }
+    },
+    "Getting things ready...": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Getting things ready..."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Préparation en cours..."
+          }
+        }
+      }
+    },
+    "Grant Access": {
+      "comment": "Onboarding: Permission request button",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grant Access"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autoriser l'accès"
+          }
+        }
+      }
+    },
+    "Grant Cloudless access to your microphone to start dictating.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grant Cloudless access to your microphone to start dictating."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorisez Cloudless à accéder à votre microphone pour commencer à dicter."
+          }
+        }
+      }
+    },
+    "Grant access": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grant access"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autoriser l'accès"
+          }
+        }
+      }
+    },
+    "Grant access to unlock all tools": {
+      "comment": "Onboarding: Permissions page title",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grant access to unlock all tools"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorisez l'accès pour débloquer tous les outils"
+          }
+        }
+      }
+    },
+    "Grant access to use Cloudless": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grant access to use Cloudless"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorisez l'accès pour utiliser Cloudless"
+          }
+        }
+      }
+    },
+    "Granted": {
+      "comment": "Onboarding: Permission granted button state",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Granted"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorisé"
+          }
+        }
+      }
+    },
+    "Hang tight while we set up your Cloudless experience.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hang tight while we set up your Cloudless experience."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "Patientez pendant que nous préparons votre expérience Cloudless."
+          }
+        }
+      }
+    },
+    "Help us improve": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Help us improve"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aidez-nous à nous améliorer"
+          }
+        }
+      }
+    },
+    "Help us keep dictation free": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Help us keep dictation free"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aidez-nous à garder la dictée gratuite"
+          }
+        }
+      }
+    },
+    "Hi John, let's discuss this tomorrow at 8 AM, no sorry, 9 AM.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hi John, let's discuss this tomorrow at 8 AM, no sorry, 9 AM."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salut John, discutons-en demain à 8 h, non pardon, 9 h."
+          }
+        }
+      }
+    },
+    "Hold down %@ and start speaking. Release to insert text.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hold down %@ and start speaking. Release to insert text."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maintenez %@ enfoncé et commencez à parler. Relâchez pour insérer le texte."
+          }
+        }
+      }
+    },
+    "I think that's, umm, correct": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I think that's, umm, correct"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je pense que c'est, euh, correct"
+          }
+        }
+      }
+    },
+    "I'm throwing away my keyboard": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I'm throwing away my keyboard"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je jette mon clavier à la poubelle"
+          }
+        }
+      }
+    },
+    "I'm throwing away my keyboard.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I'm throwing away my keyboard."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je jette mon clavier."
+          }
+        }
+      }
+    },
+    "I'm wondering what's next now that our plans": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I'm wondering what's next now that our plans"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je me demande ce qui suit maintenant que nos projets"
+          }
+        }
+      }
+    },
+    "I'm wondering what's next.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I'm wondering what's next."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je me demande ce qui suit."
+          }
+        }
+      }
+    },
+    "Improve": {
+      "comment": "Onboarding: Demo step indicator - step 2",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer"
+          }
+        }
+      }
+    },
+    "Insert": {
+      "comment": "Onboarding: Demo step indicator - step 3",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Insert"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Insérer"
+          }
+        }
+      }
+    },
+    "Invalid email format": {
+      "comment": "Onboarding: Magic link invalid email error",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invalid email format"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Format d'e-mail invalide"
+          }
+        }
+      }
+    },
+    "Invite friends with your link - get a personal shoutout!": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invite friends with your link - get a personal shoutout!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invitez des amis avec votre lien - recevez une mention personnelle !"
+          }
+        }
+      }
+    },
+    "It's still private.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It's still private."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cela reste privé."
+          }
+        }
+      }
+    },
+    "It's working!": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It's working!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ça marche !"
+          }
+        }
+      }
+    },
+    "John Smith": {
+      "comment": "Onboarding: Placeholder name for transcription warmup",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "John Smith"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jean Dupont"
+          }
+        }
+      }
+    },
+    "Join our Discord Server!": {
+      "comment": "Onboarding: Discord page title",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Join our Discord Server!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rejoignez notre serveur Discord !"
+          }
+        }
+      }
+    },
+    "Keep your plan": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep your plan"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gardez votre forfait"
+          }
+        }
+      }
+    },
+    "Let's try it out!": {
+      "comment": "Onboarding: Transcription warmup ready caption",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Let's try it out!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Essayons !"
+          }
+        }
+      }
+    },
+    "Logout": {
+      "comment": "Onboarding: Logout button",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Logout"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Déconnexion"
+          }
+        }
+      }
+    },
+    "Maybe Later": {
+      "comment": "Onboarding: Discord skip button",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maybe Later"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Peut-être plus tard"
+          }
+        }
+      }
+    },
+    "Microphone ready to use": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microphone ready to use"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microphone prêt à l'emploi"
+          }
+        }
+      }
+    },
+    "Microphone:": {
+      "comment": "Onboarding: Transcription demo microphone label",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microphone:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microphone :"
+          }
+        }
+      }
+    },
+    "Mobile access": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mobile access"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accès mobile"
+          }
+        }
+      }
+    },
+    "My coworkers think I'm talking to myself": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "My coworkers think I'm talking to myself"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mes collègues pensent que je parle tout seul"
+          }
+        }
+      }
+    },
+    "My fingers are officially retired": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "My fingers are officially retired"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mes doigts sont officiellement à la retraite"
+          }
+        }
+      }
+    },
+    "Next": {
+      "comment": "Onboarding: Default next button text",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suivant"
+          }
+        }
+      }
+    },
+    "No microphones found. Click to retry.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No microphones found. Click to retry."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun microphone trouvé. Cliquez pour réessayer."
+          }
+        }
+      }
+    },
+    "No, you don't! You can try Cloudless without an account. However, we prefer you sign in for a few reasons:": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No, you don't! You can try Cloudless without an account. However, we prefer you sign in for a few reasons:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non ! Vous pouvez essayer Cloudless sans compte. Nous préférons toutefois que vous vous connectiez, pour plusieurs raisons :"
+          }
+        }
+      }
+    },
+    "Nothing happening? Try selecting a different shortcut.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nothing happening? Try selecting a different shortcut."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rien ne se passe ? Essayez de sélectionner un autre raccourci."
+          }
+        }
+      }
+    },
+    "Now that our plans have changed.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Now that our plans have changed."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maintenant que nos projets ont changé."
+          }
+        }
+      }
+    },
+    "OR": {
+      "comment": "Onboarding: Divider between Google auth and email auth",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OR"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OU"
+          }
+        }
+      }
+    },
+    "Ok": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ok"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ok"
+          }
+        }
+      }
+    },
+    "Open Settings to Grant Access": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Settings to Grant Access"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "Ouvrir les Réglages pour autoriser l'accès"
+          }
+        }
+      }
+    },
+    "Optional": {
+      "comment": "Onboarding: Optional permission caption",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optional"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Facultatif"
+          }
+        }
+      }
+    },
+    "Permissions are needed for voice dictation to work properly.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permissions are needed for voice dictation to work properly."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Des autorisations sont nécessaires au bon fonctionnement de la dictée vocale."
+          }
+        }
+      }
+    },
+    "Please enter your email": {
+      "comment": "Onboarding: Magic link empty email error",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Please enter your email"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Veuillez entrer votre e-mail"
+          }
+        }
+      }
+    },
+    "Preparing Dictation...": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preparing Dictation..."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Préparation de la dictée..."
+          }
+        }
+      }
+    },
+    "Press & hold to test": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press & hold to test"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maintenez enfoncé pour tester"
+          }
+        }
+      }
+    },
+    "Press and hold %@ and speak your message.\n\nDouble-tap for hands-free mode.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press and hold %@ and speak your message.\n\nDouble-tap for hands-free mode."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maintenez %@ enfoncé et énoncez votre message.\n\nAppuyez deux fois pour le mode mains libres."
+          }
+        }
+      }
+    },
+    "Previous": {
+      "comment": "Onboarding: Shortcut legend - previous",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Previous"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Précédent"
+          }
+        }
+      }
+    },
+    "Privacy": {
+      "comment": "Onboarding: Footer link to privacy policy",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privacy"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confidentialité"
+          }
+        }
+      }
+    },
+    "Privacy Policy": {
+      "comment": "Onboarding: Privacy policy link",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privacy Policy"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Politique de confidentialité"
+          }
+        }
+      }
+    },
+    "Proceed without account": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proceed without account"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continuer sans compte"
+          }
+        }
+      }
+    },
+    "QuickEdit": {
+      "comment": "Onboarding: Feature name - QuickEdit",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "QuickEdit"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "QuickEdit"
+          }
+        }
+      }
+    },
+    "Ready to go": {
+      "comment": "Onboarding: Transcription warmup ready title",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ready to go"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prêt à commencer"
+          }
+        }
+      }
+    },
+    "Record a Shortcut": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Record a Shortcut"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enregistrer un raccourci"
+          }
+        }
+      }
+    },
+    "Recording...": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recording..."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enregistrement..."
+          }
+        }
+      }
+    },
+    "Required": {
+      "comment": "",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Required"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Requis"
+          }
+        }
+      }
+    },
+    "Resend Link": {
+      "comment": "Onboarding: Magic link resend button",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resend Link"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Renvoyer le lien"
+          }
+        }
+      }
+    },
+    "Reset": {
+      "comment": "Onboarding: Reset button tooltip",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reset"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réinitialiser"
+          }
+        }
+      }
+    },
+    "Retry": {
+      "comment": "Onboarding: Server warmup retry button",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retry"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réessayer"
+          }
+        }
+      }
+    },
+    "Right Command": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Right Command"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commande droite"
+          }
+        }
+      }
+    },
+    "Say hello to the team and other Cloudless users, get updates\nand give feedback.": {
+      "comment": "Onboarding: Discord page caption",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Say hello to the team and other Cloudless users, get updates\nand give feedback."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dites bonjour à l'équipe et aux autres utilisateurs d'Cloudless, recevez des mises à jour\net donnez votre avis."
+          }
+        }
+      }
+    },
+    "Say hello to the team and other Cloudless users, get updates\\nand give feedback.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Say hello to the team and other Cloudless users, get updates\\nand give feedback."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dites bonjour à l'équipe et aux autres utilisateurs d'Cloudless, recevez des mises à jour\\net donnez votre avis."
+          }
+        }
+      }
+    },
+    "Say this trigger to auto-remove a filler word.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Say this trigger to auto-remove a filler word."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dites ce déclencheur pour supprimer automatiquement un mot de remplissage."
+          }
+        }
+      }
+    },
+    "Say this trigger to backtrack a mistake.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Say this trigger to backtrack a mistake."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dites ce déclencheur pour corriger une erreur."
+          }
+        }
+      }
+    },
+    "Say this trigger to create a numbered lists item": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Say this trigger to create a numbered lists item"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dites ce déclencheur pour créer un élément de liste numérotée"
+          }
+        }
+      }
+    },
+    "Screenshots": {
+      "comment": "Onboarding: Screen recording permission title",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Screenshots"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Captures d'écran"
+          }
+        }
+      }
+    },
+    "Screenshots are used to find empty screen space, keeping Cloudless out of the way!": {
+      "comment": "Onboarding: Screenshot permission example sheet title",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Screenshots are used to find empty screen space, keeping Cloudless out of the way!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les captures d'écran sont utilisées pour trouver l'espace vide à l'écran, gardant Cloudless hors du chemin !"
+          }
+        }
+      }
+    },
+    "Screenshots never leave your Mac - they're used once and deleted instantly.": {
+      "comment": "Onboarding: Screen recording permission bullet point",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Screenshots never leave your Mac - they're used once and deleted instantly."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les captures d'écran ne quittent jamais votre Mac - elles sont utilisées une fois puis supprimées instantanément."
+          }
+        }
+      }
+    },
+    "Sending...": {
+      "comment": "Onboarding: Magic link resend loading state",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sending..."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Envoi..."
+          }
+        }
+      }
+    },
+    "Set up your microphone": {
+      "comment": "Onboarding: Transcription setup page title",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Set up your microphone"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Configurez votre microphone"
+          }
+        }
+      }
+    },
+    "Shopping list. Number one, bananas. Number two, milk. Number three, bread.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shopping list. Number one, bananas. Number two, milk. Number three, bread."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liste de courses. Numéro un, bananes. Numéro deux, lait. Numéro trois, pain."
+          }
+        }
+      }
+    },
+    "Sign in to keep your settings, dictionary and plan in sync.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in to keep your settings, dictionary and plan in sync."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connectez-vous pour synchroniser vos paramètres, votre dictionnaire et votre forfait."
+          }
+        }
+      }
+    },
+    "Sign up": {
+      "comment": "Onboarding: Auth redirect to sign up",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign up"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "S'inscrire"
+          }
+        }
+      }
+    },
+    "Siri wishes she could do this": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri wishes she could do this"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri rêverait de faire ça"
+          }
+        }
+      }
+    },
+    "Skip": {
+      "comment": "Onboarding: Skip button",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skip"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passer"
+          }
+        }
+      }
+    },
+    "Something went wrong": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Something went wrong"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une erreur s'est produite"
+          }
+        }
+      }
+    },
+    "Something went wrong. Please try again.": {
+      "comment": "Onboarding: Magic link request failed error",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Something went wrong. Please try again."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une erreur est survenue. Veuillez réessayer."
+          }
+        }
+      }
+    },
+    "Speak into your microphone to proceed.": {
+      "comment": "Onboarding: Transcription setup caption",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speak into your microphone to proceed."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parlez dans votre microphone pour continuer."
+          }
+        }
+      }
+    },
+    "Speak to test your microphone": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speak to test your microphone"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parlez pour tester votre microphone"
+          }
+        }
+      }
+    },
+    "Start Setup →": {
+      "comment": "Onboarding: Feature selection start button",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start Setup →"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Démarrer la configuration →"
+          }
+        }
+      }
+    },
+    "Start typing in any app, and you'll see Cloudless's\nsuggestions appear.": {
+      "comment": "Onboarding: Complete page caption",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start typing in any app, and you'll see Cloudless's\nsuggestions appear."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commencez à taper dans n'importe quelle application, et vous verrez\nles suggestions d'Cloudless apparaître."
+          }
+        }
+      }
+    },
+    "Start typing in any app, and you'll see Cloudless's\\nsuggestions appear.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start typing in any app, and you'll see Cloudless's\\nsuggestions appear."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commencez à taper dans n'importe quelle application, et vous verrez\\nles suggestions d'Cloudless apparaître."
+          }
+        }
+      }
+    },
+    "Starting…": {
+      "comment": "Onboarding: Sub-caption shown briefly before the warmup transitions to fetching.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starting…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Démarrage…"
+          }
+        }
+      }
+    },
+    "Terms": {
+      "comment": "Onboarding: Footer link to terms of service",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terms"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conditions"
+          }
+        }
+      }
+    },
+    "Terms of Service": {
+      "comment": "Onboarding: Terms of service link",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terms of Service"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conditions d'utilisation"
+          }
+        }
+      }
+    },
+    "Test your dictation shortcut": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Test your dictation shortcut"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Testez votre raccourci de dictée"
+          }
+        }
+      }
+    },
+    "The future belongs to vocal chords": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The future belongs to vocal chords"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'avenir appartient aux cordes vocales"
+          }
+        }
+      }
+    },
+    "The voice-to-text AI tool that turns messy speech into polished\nwriting anywhere.": {
+      "comment": "Onboarding: Transcription intro caption",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The voice-to-text AI tool that turns messy speech into polished\nwriting anywhere."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'outil IA de transcription vocale qui transforme vos paroles\nen texte soigné, partout."
+          }
+        }
+      }
+    },
+    "This helps Cloudless find empty space so it doesn't cover what you're working on.": {
+      "comment": "Onboarding: Screen recording permission bullet point",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This helps Cloudless find empty space so it doesn't cover what you're working on."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ceci aide Cloudless à trouver un espace libre pour ne pas masquer votre contenu."
+          }
+        }
+      }
+    },
+    "This is taking longer than expected.": {
+      "comment": "Onboarding: Caption shown above the retry button when the warmup has stalled in the pre-download phase past the stall-detection threshold.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This is taking longer than expected."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cela prend plus de temps que prévu."
+          }
+        }
+      }
+    },
+    "This is way faster than typing": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This is way faster than typing"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "C'est bien plus rapide que de taper au clavier"
+          }
+        }
+      }
+    },
+    "This is what allows Cloudless paste your speech into any text field.": {
+      "comment": "Onboarding: Accessibility permission bullet point",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This is what allows Cloudless paste your speech into any text field."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "C'est ce qui permet à Cloudless de coller vos paroles dans n'importe quel champ de texte."
+          }
+        }
+      }
+    },
+    "Tip: choose a key you don't normally use for anything else": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tip: choose a key you don't normally use for anything else"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Astuce : choisissez une touche que vous n'utilisez normalement pour rien d'autre"
+          }
+        }
+      }
+    },
+    "Try adding...": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try adding..."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Essayez d'ajouter…"
+          }
+        }
+      }
+    },
+    "Try backtracking": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try backtracking"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Essayer le retour en arrière"
+          }
+        }
+      }
+    },
+    "Try dictating!": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try dictating!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Essayez de dicter !"
+          }
+        }
+      }
+    },
+    "Try inserting...": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try inserting..."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Essayez d'insérer…"
+          }
+        }
+      }
+    },
+    "Try saying...": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try saying..."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Essayez de dire…"
+          }
+        }
+      }
+    },
+    "Type with your voice": {
+      "comment": "Onboarding: Transcription intro title",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type with your voice"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tapez avec votre voix"
+          }
+        }
+      }
+    },
+    "Ultimately, it's your call. Privacy matters (especially for a local dictation tool) so if you'd rather skip the account, we completely understand!": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ultimately, it's your call. Privacy matters (especially for a local dictation tool) so if you'd rather skip the account, we completely understand!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Au final, c'est vous qui décidez. La confidentialité compte (surtout pour un outil de dictée locale), donc si vous préférez vous passer de compte, nous le comprenons tout à fait !"
+          }
+        }
+      }
+    },
+    "Unknown Google sign in error": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unknown Google sign in error"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreur de connexion Google inconnue"
+          }
+        }
+      }
+    },
+    "Use this key anywhere to start dictating.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use this key anywhere to start dictating."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utilisez cette touche n'importe où pour commencer à dicter."
+          }
+        }
+      }
+    },
+    "Voice Dictation": {
+      "comment": "Onboarding: Transcription intro pill text",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voice Dictation"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dictée vocale"
+          }
+        }
+      }
+    },
+    "Waiting...": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waiting..."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En attente…"
+          }
+        }
+      }
+    },
+    "Warming Up...": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Warming Up..."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "Préchauffage..."
+          }
+        }
+      }
+    },
+    "We're loading the speech recognition model.\nThis will only take a moment.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "We're loading the speech recognition model.\nThis will only take a moment."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nous chargeons le modèle de reconnaissance vocale.\nCela ne prendra qu'un instant."
+          }
+        }
+      }
+    },
+    "We're setting up your speech recognition model for the first time.": {
+      "comment": "Onboarding: Transcription warmup caption",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "We're setting up your speech recognition model for the first time."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nous configurons votre modèle de reconnaissance vocale pour la première fois."
+          }
+        }
+      }
+    },
+    "Welcome to\n": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome to\n"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bienvenue sur\n"
+          }
+        }
+      }
+    },
+    "Welcome to Cloudless": {
+      "comment": "Onboarding: Feature selection page title",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome to Cloudless"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bienvenue sur Cloudless"
+          }
+        }
+      }
+    },
+    "With: ✅ Finds empty space": {
+      "comment": "Onboarding: Screenshot permission example - with access label",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With: ✅ Finds empty space"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avec : ✅ Trouve l'espace vide"
+          }
+        }
+      }
+    },
+    "Without Smart Cleanup": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Without Smart Cleanup"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sans Nettoyage intelligent"
+          }
+        }
+      }
+    },
+    "Without Smart Cleanup (e.g. Apple Dictation)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Without Smart Cleanup (e.g. Apple Dictation)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sans Nettoyage intelligent (p. ex. Dictée Apple)"
+          }
+        }
+      }
+    },
+    "Without: ❌ May cover content": {
+      "comment": "Onboarding: Screenshot permission example - without access label",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Without: ❌ May cover content"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sans : ❌ Peut recouvrir le contenu"
+          }
+        }
+      }
+    },
+    "You can still use CapsLock by holding Shift": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can still use CapsLock by holding Shift"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vous pouvez toujours utiliser CapsLock en maintenant Maj"
+          }
+        }
+      }
+    },
+    "You're all set to use Cloudless.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You're all set to use Cloudless."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vous êtes prêt à utiliser Cloudless."
+          }
+        }
+      }
+    },
+    "You've been invited to join": {
+      "comment": "Onboarding: Discord invite text",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You've been invited to join"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vous avez été invité à rejoindre"
+          }
+        }
+      }
+    },
+    "e.g. \"Number one\", \"Number two\", or \"bullet\"": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "e.g. \"Number one\", \"Number two\", or \"bullet\""
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p. ex. « Numéro un », « Numéro deux » ou « puce »"
+          }
+        }
+      }
+    },
+    "fn (Function)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "fn (Function)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "fn (Fonction)"
+          }
+        }
+      }
+    },
+    "have changed.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "have changed."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ont changé."
+          }
+        }
+      }
+    },
+    "of your email address, or ": {
+      "comment": "Onboarding: Magic link blurb help text line 2",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "of your email address, or "
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "de votre adresse e-mail, ou "
+          }
+        }
+      }
+    },
+    "or ": {
+      "comment": "Onboarding: Project indexing connector",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "or "
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ou "
+          }
+        }
+      }
+    },
+    "or, insert mid-sentence": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "or, insert mid-sentence"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ou, insérer au milieu d'une phrase"
+          }
+        }
+      }
+    },
+    "􀆡 (Caps Lock)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "􀆡 (Caps Lock)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "􀆡 (Caps Lock)"
+          }
+        }
+      }
+    },
+    " Your email signs you in. In the official app it is also linked to usage analytics (PostHog), which you can turn off in Settings > General.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " Your email signs you in. In the official app it is also linked to usage analytics (PostHog), which you can turn off in Settings > General."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " Votre e-mail sert à vous connecter. Dans l'app officielle, il est aussi associé aux statistiques d'usage (PostHog), que vous pouvez désactiver dans Paramètres > Général."
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

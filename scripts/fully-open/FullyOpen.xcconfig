@@ -1,0 +1,16 @@
+//
+// FullyOpen.xcconfig
+// Cloudless Voice
+//
+// Build identity of the fully open build. scripts/build-fully-open.sh copies this
+// file into libs/transcription-cleanup-swift/ along with the stub, and --restore
+// removes it, so it applies exactly while the stub is swapped in, whichever way
+// the app is then built (the script's --build, scripts/ci-test.sh or Xcode).
+//
+// macos/Config/Base.xcconfig includes it after its defaults and before
+// Local.xcconfig and the official release overlay, which both still win.
+//
+
+// Its own bundle ID, so running a fully open build doesn't read or change the
+// official development build's preferences (inc.synth.Onit.dev).
+PRODUCT_BUNDLE_IDENTIFIER = inc.synth.Onit.dev.open

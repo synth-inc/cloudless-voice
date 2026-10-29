@@ -1,0 +1,88 @@
+name: Bug report
+description: Something in Cloudless Voice isn't working as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug.
+        **Security issues:** please do not file them here. Follow [SECURITY.md](https://github.com/synth-inc/cloudless-voice/blob/main/SECURITY.md) instead.
+        **Privacy:** don't paste transcripts or audio you wouldn't want public.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open Settings > ...
+        2. Press ⌥Space in ...
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: Cloudless Voice version
+      description: Settings > About (or the menu bar icon)
+      placeholder: "4.8 (83)"
+    validations:
+      required: true
+  - type: dropdown
+    id: build
+    attributes:
+      label: Which build?
+      options:
+        - Official app (downloaded from cloudless.so or Homebrew)
+        - Built from source (official configuration)
+        - Built from source (scripts/build-fully-open.sh)
+        - A fork
+    validations:
+      required: true
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version
+      placeholder: "macOS 15.5"
+    validations:
+      required: true
+  - type: dropdown
+    id: mac
+    attributes:
+      label: Mac
+      options:
+        - Apple Silicon
+        - Intel
+    validations:
+      required: true
+  - type: input
+    id: speech-model
+    attributes:
+      label: Speech model
+      description: Settings > speech model (e.g. Parakeet v3, Whisper Large Turbo v3, Qwen3-ASR)
+  - type: dropdown
+    id: cleanup
+    attributes:
+      label: Cleanup mode
+      options:
+        - "Off"
+        - Smart Cleanup
+        - BYOK (cloud provider)
+        - BYOK (local model, e.g. Ollama)
+        - Not sure
+  - type: input
+    id: target-app
+    attributes:
+      label: App you were dictating into
+      description: If the bug is about text insertion, which app (and which field)?
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Optional. Remove any personal text before pasting.
+      render: text

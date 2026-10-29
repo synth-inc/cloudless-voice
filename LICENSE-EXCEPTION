@@ -1,0 +1,74 @@
+Cloudless Voice
+Copyright (C) 2024-2026 Synthetic Exploration, Inc.
+
+This program is free software: you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation, either version 3 of the License, or (at your option)
+any later version, together with the additional permission stated below.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License
+for more details.
+
+The full text of the GNU General Public License version 3 is in the
+LICENSE file at the root of this repository.
+
+==========================================================================
+
+                         ADDITIONAL PERMISSIONS
+
+  The licensors of this Program grant the following two additional
+  permissions under section 7 of the GNU General Public License version 3.
+  Each applies independently of the other.
+
+  1. Cloudless Smart Cleanup library
+
+  Additional permission under GNU GPL version 3 section 7
+
+  If you modify this Program, or any covered work, by linking or
+  combining it with the Cloudless Smart Cleanup library (or a modified
+  version of that library), containing parts covered by the terms of the
+  Cloudless Smart Cleanup License, the licensors of this Program grant you
+  additional permission to convey the resulting work.
+
+  The Cloudless Smart Cleanup library is distributed in this repository,
+  in binary form only, at libs/transcription-cleanup-swift. Its own terms
+  are in libs/transcription-cleanup-swift/LICENSE. This additional
+  permission does not grant any rights in the Cloudless Smart Cleanup
+  library itself.
+
+  2. OpenSSL
+
+
+  Additional permission under GNU GPL version 3 section 7
+
+  If you modify this Program, or any covered work, by linking or
+  combining it with OpenSSL (or a modified version of that library),
+  containing parts covered by the terms of the OpenSSL or SSLeay
+  licenses, the licensors of this Program grant you additional permission
+  to convey the resulting work. Corresponding Source for a non-source form
+  of such a combination shall include the source code for the parts of
+  OpenSSL used as well as that of the covered work.
+
+  For the purposes of this permission, "OpenSSL" includes BoringSSL and
+  any other library derived from OpenSSL that contains parts covered by
+  the terms of the OpenSSL or SSLeay licenses, such as the openssl_grpc
+  framework distributed with gRPC.
+
+==========================================================================
+
+  Both permissions above are identified together, in SPDX notation, as:
+
+  SPDX-License-Identifier:
+    GPL-3.0-or-later WITH AdditionRef-Cloudless-Voice-linking-exception
+
+  (SPDX allows only one exception per license in an expression, so a
+  single custom identifier covers both permissions.)
+
+==========================================================================
+
+"Cloudless" and "Cloudless Voice" are trademarks of Synthetic Exploration, Inc. As
+permitted by section 7(e) of the GNU General Public License, this license
+does not grant permission to use these names or the Cloudless Voice icon;
+see TRADEMARKS.md.

@@ -1,0 +1,3 @@
+[submodule "libs/speech-swift-vendored"]
+	path = libs/speech-swift-vendored
+	url = https://github.com/synth-inc/speech-swift-vendored.git

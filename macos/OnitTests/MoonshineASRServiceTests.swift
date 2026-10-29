@@ -1,0 +1,48 @@
+// SPDX-License-Identifier: GPL-3.0-or-later WITH AdditionRef-Cloudless-Voice-linking-exception
+//
+//  MoonshineASRServiceTests.swift
+//  OnitTests
+//
+//  Created by Kévin Naudin on 2026-05-19.
+//
+
+import Foundation
+import Testing
+@testable import Onit
+
+@MainActor
+struct MoonshineASRServiceTests {
+
+    @Test("A fresh service has an empty audio buffer")
+    func freshServiceHasEmptyBuffer() {
+        let service = MoonshineASRService.shared
+        service.reset()
+        #expect(service.accumulatedSamples.isEmpty)
+        #expect(service.accumulatedDuration == 0)
+    }
+
+    @Test("Transcribing an empty buffer short-circuits to no hypotheses")
+    func transcribingEmptyBufferReturnsNoHypotheses() async throws {
+        let service = MoonshineASRService.shared
+        service.reset()
+        let (hypotheses, language, vadSuppressed) = try await service.transcribe()
+        #expect(hypotheses.isEmpty)
+        #expect(language == nil)
+        #expect(vadSuppressed == false)
+    }
+
+    @Test("markAsReady flips isModelReady true")
+    func markAsReadyFlipsFlag() {
+        let service = MoonshineASRService.shared
+        service.markAsReady()
+        #expect(service.isModelReady == true)
+    }
+
+    @Test("reset clears the audio buffer between recordings")
+    func resetClearsBuffer() {
+        let service = MoonshineASRService.shared
+        service.reset()
+        #expect(service.accumulatedSamples.isEmpty)
+        #expect(service.accumulatedDuration == 0)
+    }
+}

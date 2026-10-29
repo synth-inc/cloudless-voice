@@ -1,0 +1,261 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.3 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-macos13.0 -enable-objc-interop -enable-library-evolution -swift-version 6 -O -enable-experimental-feature DebugDescriptionMacro -module-name TranscriptionCleanup -package-name tcs_pr14
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+import CryptoKit
+import Foundation
+import LocalAuthentication
+import NaturalLanguage
+import Security
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol CleanupLLMService : Swift.Sendable {
+  func cleanup(_ text: Swift.String) async -> Swift.String
+}
+public struct CleanupRuleCategory : Swift.Identifiable, Swift.Sendable {
+  public let id: Swift.String
+  public let name: Swift.String
+  public let description: Swift.String
+  public let positiveExamples: [(input: Swift.String, output: Swift.String)]
+  public let negativeExamples: [(input: Swift.String, output: Swift.String)]
+  public init(id: Swift.String, name: Swift.String, description: Swift.String, positiveExamples: [(input: Swift.String, output: Swift.String)], negativeExamples: [(input: Swift.String, output: Swift.String)])
+  public typealias ID = Swift.String
+}
+public enum CleanupTrainingData {
+  public static let categories: [TranscriptionCleanup.CleanupRuleCategory]
+}
+public enum SmartFormattingDefaults {
+  public static let punctuation: [Swift.String : [Swift.String]]
+  public static let formatting: [Swift.String : [Swift.String]]
+  public static let fillers: [Swift.String]
+  public static func emojiTriggerWords(locale: TranscriptionCleanup.SupportedLocale) -> [Swift.String]
+  public static func emojiGlyphs(locale: TranscriptionCleanup.SupportedLocale) -> [Swift.String : Swift.String]
+  public static func emailGreetings(locale: TranscriptionCleanup.SupportedLocale) -> [Swift.String]
+  public static func emailSignOffs(locale: TranscriptionCleanup.SupportedLocale) -> [Swift.String]
+}
+public enum CleanupPlan : Swift.String, Swift.Sendable, Swift.Codable {
+  case free
+  case subscription
+  case lifetime
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct CleanupUsage : Swift.Sendable, Swift.Equatable {
+  public let wordsUsed: Swift.Int
+  public let wordLimit: Swift.Int?
+  public let periodEnd: Foundation.Date
+  public let plan: TranscriptionCleanup.CleanupPlan
+  public let wordsThisMonth: Swift.Int
+  public let freeTierAvailable: Swift.Bool
+  public let lastConfirmedAt: Foundation.Date?
+  public var wordsRemaining: Swift.Int? {
+    get
+  }
+  public static func == (a: TranscriptionCleanup.CleanupUsage, b: TranscriptionCleanup.CleanupUsage) -> Swift.Bool
+}
+public enum CleanupDenialReason : Swift.Sendable, Swift.Equatable {
+  case freeAllowanceUsed
+  case freeTierRequiresSignedBuild
+  public static func == (a: TranscriptionCleanup.CleanupDenialReason, b: TranscriptionCleanup.CleanupDenialReason) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum CleanupEntitlementError : Swift.Error, Swift.Sendable, Swift.Equatable {
+  case notEntitled(TranscriptionCleanup.CleanupUsage)
+  public var reason: TranscriptionCleanup.CleanupDenialReason {
+    get
+  }
+  public static func == (a: TranscriptionCleanup.CleanupEntitlementError, b: TranscriptionCleanup.CleanupEntitlementError) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers final public class CleanupEntitlement : @unchecked Swift.Sendable {
+  public static let shared: TranscriptionCleanup.CleanupEntitlement
+  public static let freeWordsPerMonth: Swift.Int
+  public static let didChangeNotification: Foundation.Notification.Name
+  public static let offlineGrace: Swift.Double
+  final public func configure(serverBaseURL: Foundation.URL, tokenProvider: @escaping @Sendable () async -> Swift.String?)
+  public static let unmeteredWordBudget: Swift.Int
+  public static func withoutMetering<T>(isolation: isolated (any _Concurrency.Actor)? = #isolation, _ operation: () async throws -> T) async rethrows -> T
+  final public var isFreeTierAvailable: Swift.Bool {
+    get
+  }
+  final public var usage: TranscriptionCleanup.CleanupUsage {
+    get
+  }
+  @discardableResult
+  final public func refresh() async -> TranscriptionCleanup.CleanupUsage
+  final public func reset()
+  @objc deinit
+}
+public protocol RawTextInference : Swift.Sendable {
+  func generate(system: Swift.String, user: Swift.String) async throws -> Swift.String
+}
+public enum LLMRefinement {
+  public static func mayApply(_ text: Swift.String, markers: [Foundation.NSRegularExpression]) -> Swift.Bool
+  public static func apply(_ text: Swift.String, using inference: any TranscriptionCleanup.RawTextInference) async throws -> Swift.String
+}
+extension TranscriptionCleanup.LLMRefinement {
+  public static var improvementInstructions: Swift.String {
+    get
+  }
+}
+public enum SupportedLocale : Swift.String, Swift.Sendable, Swift.CaseIterable {
+  case english
+  case french
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [TranscriptionCleanup.SupportedLocale]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [TranscriptionCleanup.SupportedLocale] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct CleanupResult : Swift.Sendable {
+  public struct Change : Swift.Sendable {
+    public let originalText: Swift.String
+    public let replacement: Swift.String?
+    public let ruleName: Swift.String?
+  }
+  public let inputText: Swift.String
+  public let finalOutput: Swift.String
+  public let cleanupApplied: Swift.Bool
+  public let categoriesEvaluated: [TranscriptionCleanup.CleanupCategory : Swift.Int]
+  public let categoriesApplied: [TranscriptionCleanup.CleanupCategory : Swift.Int]
+  public let deletePrecedingChars: Swift.Int
+  public let suppressedTrailingPunct: Swift.Bool
+  public let trailingFormattingSuffix: Swift.String?
+  public let chunkCount: Swift.Int
+  public var outputText: Swift.String {
+    get
+  }
+  public var changes: [TranscriptionCleanup.CleanupResult.Change]? {
+    get
+  }
+  public var trailingSpaceHandled: Swift.Bool {
+    get
+  }
+}
+extension TranscriptionCleanup.CleanupResult {
+  public var debugReport: Swift.String? {
+    get
+  }
+}
+public enum CleanupCategory : Swift.String, Swift.CaseIterable, Swift.Sendable {
+  case fillers
+  case stutters
+  case emailUrl
+  case acronyms
+  case pairedBrackets
+  case numbers
+  case punctuation
+  case formatting
+  case emoji
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [TranscriptionCleanup.CleanupCategory]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [TranscriptionCleanup.CleanupCategory] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct CategoryConfig : Swift.Sendable {
+  public var enabled: Swift.Bool
+  public var addTriggers: [Swift.String]
+  public var removeTriggers: [Swift.String]
+  public var customGlyphs: [Swift.String : Swift.String]
+  public init(enabled: Swift.Bool = true, addTriggers: [Swift.String] = [], removeTriggers: [Swift.String] = [], customGlyphs: [Swift.String : Swift.String] = [:])
+}
+public enum NumberStyle : Swift.String, Swift.Sendable {
+  case withComma
+  case withoutComma
+  case spaceSeparated
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct PipelineConfig : Swift.Sendable {
+  public var categories: [TranscriptionCleanup.CleanupCategory : TranscriptionCleanup.CategoryConfig]
+  public var numberStyle: TranscriptionCleanup.NumberStyle
+  public var abbreviateLargeNumbers: Swift.Bool
+  public var capitalizationEnabled: Swift.Bool
+  public var trailingPunctScoringEnabled: Swift.Bool
+  public var trailingSpaceScoringEnabled: Swift.Bool
+  public var locale: TranscriptionCleanup.SupportedLocale
+  public var forceApplyDeterministicFR: Swift.Bool
+  public var forceRemoveFillers: Swift.Bool
+  public var forceRemoveStutters: Swift.Bool
+  public var emailFormattingEnabled: Swift.Bool
+  public var emailGreetingAddTriggers: [Swift.String]
+  public var emailGreetingRemoveTriggers: [Swift.String]
+  public var emailSignOffAddTriggers: [Swift.String]
+  public var emailSignOffRemoveTriggers: [Swift.String]
+  public init(categories: [TranscriptionCleanup.CleanupCategory : TranscriptionCleanup.CategoryConfig] = [:], numberStyle: TranscriptionCleanup.NumberStyle = .withComma, abbreviateLargeNumbers: Swift.Bool = false, capitalizationEnabled: Swift.Bool = false, trailingPunctScoringEnabled: Swift.Bool = false, trailingSpaceScoringEnabled: Swift.Bool = false, locale: TranscriptionCleanup.SupportedLocale = .english, forceApplyDeterministicFR: Swift.Bool = true, forceRemoveFillers: Swift.Bool = false, forceRemoveStutters: Swift.Bool = false, emailFormattingEnabled: Swift.Bool = false, emailGreetingAddTriggers: [Swift.String] = [], emailGreetingRemoveTriggers: [Swift.String] = [], emailSignOffAddTriggers: [Swift.String] = [], emailSignOffRemoveTriggers: [Swift.String] = [])
+  public static func `default`() -> TranscriptionCleanup.PipelineConfig
+  public func isEnabled(_ category: TranscriptionCleanup.CleanupCategory) -> Swift.Bool
+  public func getFillerWords(defaults: [Swift.String]) -> [Swift.String]
+  public func getPunctuationTriggers(defaults: [Swift.String : Swift.String]) -> [Swift.String : Swift.String]
+  public func getBracketTriggers(defaults: [Swift.String : Swift.String]) -> [Swift.String : Swift.String]
+  public func getFormattingTriggers(defaults: [[Swift.String : Swift.String]]) -> [[Swift.String : Swift.String]]
+  public func getEmojiTriggerWords(defaults: [Swift.String]) -> [Swift.String]
+  public func getEmailProviders(defaults: [Swift.String]) -> [Swift.String]
+  public func getEmailTlds(defaults: [Swift.String]) -> [Swift.String]
+  public func getEmailGreetings(defaults: [Swift.String]) -> [Swift.String]
+  public func getEmailSignOffs(defaults: [Swift.String]) -> [Swift.String]
+}
+@_hasMissingDesignatedInitializers public actor CleanupPipeline<Engine> where Engine : TranscriptionCleanup.ScoringEngine {
+  public init(engine: Engine, llmCleanup: (any TranscriptionCleanup.CleanupLLMService)? = nil)
+  public func process(_ text: Swift.String, config: TranscriptionCleanup.PipelineConfig = .default(), precedingText: Swift.String? = nil, followingText: Swift.String? = nil) async throws -> TranscriptionCleanup.CleanupResult
+  public func processChunked(_ text: Swift.String, config: TranscriptionCleanup.PipelineConfig = .default(), precedingText: Swift.String? = nil, followingText: Swift.String? = nil) async throws -> TranscriptionCleanup.CleanupResult
+  @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
+    get
+  }
+}
+public protocol ScoringEngine : _Concurrency.Actor {
+  func tokenScores(_ text: Swift.String) async throws -> (tokenIDs: [Swift.Int], scores: [Swift.Float])
+  func scoreTrailingPunctuation(_ text: Swift.String, punctuation: [Swift.String]) async throws -> (avgScore: Swift.Float, punctScores: [Swift.String : Swift.Float])
+  var outlierThreshold: Swift.Float { get }
+  var capThreshold: Swift.Float { get }
+  var currentLocale: TranscriptionCleanup.SupportedLocale { get }
+}
+extension TranscriptionCleanup.ScoringEngine {
+  public var currentLocale: TranscriptionCleanup.SupportedLocale {
+    get
+  }
+}
+extension TranscriptionCleanup.ScoringEngine {
+  public var outlierThreshold: Swift.Float {
+    get
+  }
+  public var capThreshold: Swift.Float {
+    get
+  }
+  public func sumScore(_ text: Swift.String) async throws -> Swift.Float
+  public func avgScore(_ text: Swift.String) async throws -> Swift.Float
+}
+extension TranscriptionCleanup.CleanupPlan : Swift.Equatable {}
+extension TranscriptionCleanup.CleanupPlan : Swift.Hashable {}
+extension TranscriptionCleanup.CleanupPlan : Swift.RawRepresentable {}
+extension TranscriptionCleanup.CleanupDenialReason : Swift.Hashable {}
+extension TranscriptionCleanup.SupportedLocale : Swift.Equatable {}
+extension TranscriptionCleanup.SupportedLocale : Swift.Hashable {}
+extension TranscriptionCleanup.SupportedLocale : Swift.RawRepresentable {}
+extension TranscriptionCleanup.CleanupCategory : Swift.Equatable {}
+extension TranscriptionCleanup.CleanupCategory : Swift.Hashable {}
+extension TranscriptionCleanup.CleanupCategory : Swift.RawRepresentable {}
+extension TranscriptionCleanup.NumberStyle : Swift.Equatable {}
+extension TranscriptionCleanup.NumberStyle : Swift.Hashable {}
+extension TranscriptionCleanup.NumberStyle : Swift.RawRepresentable {}

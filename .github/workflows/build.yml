@@ -1,0 +1,86 @@
+name: Build
+
+# Builds the app and runs the default test plan twice:
+#   official    the repo as checked out, with the closed Smart Cleanup binary
+#               (libs/transcription-cleanup-swift)
+#   fully-open  after scripts/build-fully-open.sh swaps that binary for an empty
+#               stub, proving the app builds and passes its tests without it
+#
+# Neither job needs signing, secrets, GoogleService-Info.plist, downloaded models
+# or ~/Documents (see macos/Onit.xctestplan and macos/skipped-tests.txt).
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: ${{ matrix.mode }}
+    runs-on: macos-26
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        mode: [official, fully-open]
+    env:
+      DERIVED_DATA: ${{ github.workspace }}/.build/DerivedData
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          submodules: recursive
+
+      # Pinned, so a runner image update can't change the compiler under a PR. Keep in
+      # step with the Xcode the team builds releases with; the macos-26 image lists
+      # what's installed (github.com/actions/runner-images, macos-26-arm64-Readme.md).
+      - name: Select Xcode
+        run: |
+          sudo xcode-select -s /Applications/Xcode_26.6.app
+          xcodebuild -version
+
+      # Xcode 26 no longer bundles the `metal` compiler; mlx-swift_Cmlx fails without it.
+      - name: Install the Metal Toolchain
+        run: xcodebuild -downloadComponent MetalToolchain
+
+      - name: Cache SwiftPM checkouts
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
+        with:
+          path: ${{ env.DERIVED_DATA }}/SourcePackages
+          key: spm-${{ runner.os }}-${{ hashFiles('macos/Onit.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
+          restore-keys: spm-${{ runner.os }}-
+
+      - name: Check the test plan matches its skip list
+        run: python3 scripts/check-ci-testplan.py
+
+      # The project's "Environment Checks" build phase fails unless core.hooksPath
+      # is .githooks.
+      - name: Configure git hooks
+        run: ./.githooks/install.sh
+
+      - name: Switch to the fully open build
+        if: matrix.mode == 'fully-open'
+        run: scripts/build-fully-open.sh
+
+      - name: Build
+        run: scripts/ci-test.sh build
+
+      - name: Test
+        env:
+          RESULT_BUNDLE: ${{ runner.temp }}/${{ matrix.mode }}.xcresult
+        run: scripts/ci-test.sh test
+
+      - name: Upload test results
+        if: failure()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: ${{ matrix.mode }}-xcresult
+          path: ${{ runner.temp }}/${{ matrix.mode }}.xcresult
+          retention-days: 7

@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+#  pre-commit
+#  Onit
+#
+#  Refuses to commit while the fully open build's stub is swapped in
+#  (scripts/build-fully-open.sh). In that state the closed TranscriptionCleanup
+#  library is deleted from libs/transcription-cleanup-swift and replaced by a stub,
+#  and a commit could record either change.
+#
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+MARKER="$REPO_ROOT/libs/transcription-cleanup-swift/.fully-open-stub"
+
+if [ -f "$MARKER" ]; then
+    echo "error: this checkout is switched to the fully open build (the TranscriptionCleanup" >&2
+    echo "       stub is in libs/transcription-cleanup-swift). Restore the closed library first:" >&2
+    echo "" >&2
+    echo "           scripts/build-fully-open.sh --restore" >&2
+    echo "" >&2
+    echo "       then commit again." >&2
+    exit 1
+fi
+
+exit 0

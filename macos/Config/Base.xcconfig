@@ -1,0 +1,55 @@
+//
+// Base.xcconfig
+// Cloudless Voice
+//
+// Project-level base configuration (Debug and Release). Holds the settings
+// that identify *who* builds and ships the app, so a plain checkout builds a
+// neutral app: no signing team, no update feed, no analytics.
+//
+// Precedence (lowest -> highest): these defaults, then the fully open build's
+// FullyOpen.xcconfig (while it is swapped in), then Local.xcconfig, then the
+// official release overlay. Target-level settings in project.pbxproj
+// must NOT redefine these keys, or they would shadow the overlay.
+//
+// Building your own copy: create macos/Config/Local.xcconfig (gitignored), e.g.
+//     DEVELOPMENT_TEAM = ABCDE12345
+//     PRODUCT_BUNDLE_IDENTIFIER = com.example.CloudlessVoice
+// Or build unsigned: xcodebuild ... CODE_SIGNING_ALLOWED=NO
+//
+
+// ---- Signing --------------------------------------------------------------
+DEVELOPMENT_TEAM =
+PROVISIONING_PROFILE_SPECIFIER =
+
+// ---- Bundle identifier ----------------------------------------------------
+PRODUCT_BUNDLE_IDENTIFIER = inc.synth.Onit.dev
+
+// ---- Sparkle update feed --------------------------------------------------
+// Empty => the updater is never started (AppState.isUpdateFeedConfigured), so
+// public and fork builds never poll Synth's appcast. A fork that ships its own
+// updates sets both (note `//` must be written `/$()/` in xcconfig values).
+SU_FEED_URL =
+SU_PUBLIC_ED_KEY =
+
+// ---- Analytics / crash reporting -------------------------------------------
+// Empty key => PostHog is never set up (FeatureFlagManager.configure).
+POSTHOG_API_KEY =
+POSTHOG_HOST =
+// Read by Firebase Crashlytics from Info.plist (FirebaseCrashlyticsCollectionEnabled).
+CRASHLYTICS_COLLECTION_ENABLED = NO
+
+// ---- Official-build marker --------------------------------------------------
+// The overlay sets OFFICIAL_BUILD = YES and adds the OFFICIAL_BUILD Swift
+// compilation condition.
+OFFICIAL_BUILD = NO
+
+// The fully open build's identity (separate bundle ID). Present only while
+// scripts/build-fully-open.sh has the stub swapped in; see
+// scripts/fully-open/FullyOpen.xcconfig.
+#include? "../../libs/transcription-cleanup-swift/FullyOpen.xcconfig"
+
+#include? "Local.xcconfig"
+
+// Synth's official release overlay (private; lives in the release wrapper and
+// is symlinked to <repo>/release/ - gitignored). Absent in public checkouts.
+#include? "../../release/Official.xcconfig"

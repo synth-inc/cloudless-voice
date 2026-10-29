@@ -1,0 +1,42 @@
+{
+  "configurations": [
+    {
+      "id": "6C1E4B2A-3F0D-4E7B-9A51-0D2C8F7E1A01",
+      "name": "Default",
+      "options": {}
+    }
+  ],
+  "defaultOptions": {},
+  "testTargets": [
+    {
+      "parallelizable": true,
+      "skippedTests": [
+        "ASRBackendRegistryTests",
+        "ASRModelDownloadManagerTests",
+        "ASRModelLifecycleTests",
+        "ASRModelTests/catalogContainsAllExpectedModels()",
+        "ASRModelTests/ratingsAreClampedToValidRange()",
+        "ASRModelsViewModelTests",
+        "CanaryEngineSmokeTest",
+        "CustomDictionaryGateLatencyTests",
+        "EmailLayoutEitherOrTests/salutationOnly()",
+        "EmojiSemanticMatcherValidationTests",
+        "MLXASREngineTests",
+        "MoonshineEngineTests",
+        "ParakeetBundleValidationTests",
+        "ScoringModelValidationTests",
+        "TranscriptionConfigASRModelTests",
+        "WhisperBPETokenizerTests",
+        "WhisperCoreMLASRServiceTests",
+        "WhisperCoreMLEngineTests",
+        "WhisperKwsServiceTests"
+      ],
+      "target": {
+        "containerPath": "container:Onit.xcodeproj",
+        "identifier": "A7CD61462E8DA4C800EE15A5",
+        "name": "OnitTests"
+      }
+    }
+  ],
+  "version": 1
+}
