@@ -922,7 +922,7 @@ final class TranscriptionManager: ObservableObject {
 
         // Capture the frontmost app's PID and info for text insertion
         if let frontApp = NSWorkspace.shared.frontmostApplication {
-            targetPid = frontApp.processIdentifier
+            targetPid = frontApp.resolvedProcessIdentifier
             targetAppName = frontApp.localizedName
             targetAppBundleId = frontApp.bundleIdentifier
         }
@@ -1269,7 +1269,7 @@ final class TranscriptionManager: ObservableObject {
             mostRecentTranscription.pastedText
 
         /// Capture the target PID *before* entering the asynchronous Task.
-        let targetPid = frontmostApp?.processIdentifier
+        let targetPid = frontmostApp?.resolvedProcessIdentifier
 
         Task {
             _ = await PasteboardManager.shared.insertViaPaste(
@@ -1350,7 +1350,7 @@ final class TranscriptionManager: ObservableObject {
         state.trainingOriginalTextOverride = cleanedText
 
         /// Capture target PID from the user's current app (mirrors `pasteLastTranscription`).
-        targetPid = frontmostApp?.processIdentifier
+        targetPid = frontmostApp?.resolvedProcessIdentifier
 
         /// Hydrate the session-scoped instance state that `saveCorrection()` reads when the user submits the correction.
         let historyId = mostRecentTranscription.id
@@ -1962,7 +1962,7 @@ final class TranscriptionManager: ObservableObject {
                     let up   = CGEvent(keyboardEventSource: source, virtualKey: backspaceKey, keyDown: false)
                     down?.flags = []
                     up?.flags = []
-                    if let pid = targetPid {
+                    if let pid = targetPid, pid > 0 {
                         down?.postToPid(pid)
                         up?.postToPid(pid)
                     } else {

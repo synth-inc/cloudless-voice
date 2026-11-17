@@ -160,45 +160,47 @@ class AccessibilityObserversManager {
             log.error("Cannot subscribe to notifications - no NSRunningApplication found")
             return
         }
+        // processIdentifier can be -1 for execv-relaunched apps (e.g. Parall shortcuts).
+        let pid = app.resolvedProcessIdentifier ?? app.processIdentifier
         
-        let appName = app.processIdentifier.appName
-        let authState = authorizationState(for: app.processIdentifier)
+        let appName = pid.appName
+        let authState = authorizationState(for: pid)
         let hasAnyDelegateWantingIgnoredProcesses = checkIfAnyDelegateWantsIgnoredProcesses()
 
         switch authState {
         case .ownProcess:
             notifyDelegates { delegate in
-                delegate.accessibilityObserversManager(didActivateOnit: app.processIdentifier)
+                delegate.accessibilityObserversManager(didActivateOnit: pid)
             }
         case .ignoreProcess:
             notifyDelegates { delegate in
-                delegate.accessibilityObserversManager(didActivateIgnoredApplication: app.localizedName, processID: app.processIdentifier)
+                delegate.accessibilityObserversManager(didActivateIgnoredApplication: app.localizedName, processID: pid)
             }
             if hasAnyDelegateWantingIgnoredProcesses {
-                startNotificationsObserver(for: app.processIdentifier, notifications: Config.notifications)
+                startNotificationsObserver(for: pid, notifications: Config.notifications)
             }
         case .eligible:
-            log.info("Application `\(app.localizedName ?? "Unknown")` (\(app.processIdentifier)) activated")
-            if !isAXServerInitialized(pid: app.processIdentifier) {
+            log.info("Application `\(app.localizedName ?? "Unknown")` (\(pid)) activated")
+            if !isAXServerInitialized(pid: pid) {
                 log.error("AXServer not fully initialized")
                 // Emit analytics at most once per transition into the uninitialized
                 // state. App activation can fire repeatedly for an app whose AX server
                 // never initializes; emitting each time floods telemetry.
-                if reportedUninitializedPids.insert(app.processIdentifier).inserted {
+                if reportedUninitializedPids.insert(pid).inserted {
                     AnalyticsManager.Accessibility.serverInitializationError(app: app)
                 }
             } else {
-                reportedUninitializedPids.remove(app.processIdentifier)
+                reportedUninitializedPids.remove(pid)
             }
             
             notifyDelegates { delegate in
                 delegate.accessibilityObserversManager(
                     didActivateApplication: app.localizedName,
-                    processID: app.processIdentifier
+                    processID: pid
                 )
             }
             
-            startNotificationsObserver(for: app.processIdentifier, notifications: Config.notifications)
+            startNotificationsObserver(for: pid, notifications: Config.notifications)
         }
     }
     
@@ -208,37 +210,39 @@ class AccessibilityObserversManager {
             log.error("Cannot unsubscribe to notifications - no NSRunningApplication found")
             return
         }
+        // processIdentifier can be -1 for execv-relaunched apps (e.g. Parall shortcuts).
+        let pid = app.resolvedProcessIdentifier(usingFocusedElement: false) ?? app.processIdentifier
         
         // Check if Onit is activated so we don't deactivate the active app
         if let activeApp = NSWorkspace.shared.frontmostApplication,
            authorizationState(for: activeApp.processIdentifier) == .ownProcess {
-            log.debug("Onit is active, ignoring deactivation of `\(app.localizedName ?? "Unknown")` (\(app.processIdentifier))")
+            log.debug("Onit is active, ignoring deactivation of `\(app.localizedName ?? "Unknown")` (\(pid))")
             return
         }
         
         let hasAnyDelegateWantingIgnoredProcesses = checkIfAnyDelegateWantsIgnoredProcesses()
-        switch authorizationState(for: app.processIdentifier) {
+        switch authorizationState(for: pid) {
         case .ownProcess:
             notifyDelegates { delegate in
-                delegate.accessibilityObserversManager(didDeactivateOnit: app.processIdentifier)
+                delegate.accessibilityObserversManager(didDeactivateOnit: pid)
             }
             break
         case .ignoreProcess:
             notifyDelegates { delegate in
-                delegate.accessibilityObserversManager(didDeactivateIgnoredApplication: app.localizedName, processID: app.processIdentifier)
+                delegate.accessibilityObserversManager(didDeactivateIgnoredApplication: app.localizedName, processID: pid)
             }
             if hasAnyDelegateWantingIgnoredProcesses {
-                stopNotificationsObserver(for: app.processIdentifier)
+                stopNotificationsObserver(for: pid)
             }
         case .eligible:
-            log.info("Application `\(app.localizedName ?? "Unknown")` (\(app.processIdentifier)) deactivated")
+            log.info("Application `\(app.localizedName ?? "Unknown")` (\(pid)) deactivated")
             notifyDelegates { delegate in
                 delegate.accessibilityObserversManager(
                     didDeactivateApplication: app.localizedName,
-                    processID: app.processIdentifier
+                    processID: pid
                 )
             }
-            stopNotificationsObserver(for: app.processIdentifier)
+            stopNotificationsObserver(for: pid)
         }
     }
     

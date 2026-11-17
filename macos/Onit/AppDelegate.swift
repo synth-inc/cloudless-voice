@@ -26,7 +26,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // This can happen after testing with Xcode's scheme App Language setting (Product → Scheme → Edit Scheme → Run → Options → App Language).
 //        Self.clearTestSchemeLanguage()
 
-        frontmostPidBeforeLaunch = NSWorkspace.shared.frontmostApplication?.processIdentifier
+        frontmostPidBeforeLaunch = NSWorkspace.shared.frontmostApplication?.resolvedProcessIdentifier
     }
 
     @MainActor
