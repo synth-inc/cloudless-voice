@@ -181,13 +181,13 @@ final class AmbientTermCaptureService: @unchecked Sendable {
         // back to the capture queue with plain values.
         Task { @MainActor [weak self] in
             guard let app = NSWorkspace.shared.frontmostApplication,
-                  app.bundleIdentifier != Bundle.main.bundleIdentifier else { return }
+                  app.bundleIdentifier != Bundle.main.bundleIdentifier,
+                  let pid = app.resolvedProcessIdentifier else { return }
             // Same gate the rest of the app honours (AccessibilityParsingManager): a standing
             // capture posture must not be the one path that ignores it.
             guard !PrivacyManager.shared.shouldBlockDataCollection() else { return }
             let useOCR = ScreenRecordingPermissionManager.shared.isScreenRecordingEnabled
                 && !Defaults[Defaults.Keys.TranscriptionConfigKeys.asrOnScreenTermsUseAccessibility]
-            let pid = app.processIdentifier
             let bundleId = app.bundleIdentifier
             let appName = app.localizedName
             self?.queue.async {

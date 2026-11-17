@@ -96,7 +96,9 @@ final class PasteboardManager {
         keyDown.flags = pasteFlags
         keyUp.flags = pasteFlags
 
-        if let pid = targetPid {
+        // An invalid pid (e.g. -1 from NSRunningApplication for an execv-relaunched app)
+        // would swallow the event, so treat it as "no target" and post system-wide.
+        if let pid = targetPid, pid > 0 {
             // Post directly to the target process, bypassing any floating windows
             keyDown.postToPid(pid)
             try? await Task.sleep(nanoseconds: 10_000_000) // 10ms between key down and up
